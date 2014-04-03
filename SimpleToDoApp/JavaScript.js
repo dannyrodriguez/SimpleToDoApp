@@ -6,9 +6,11 @@ function clickButton() {
     counter += 1;
 }
 
-function finish(counter) {
-    var idName = "rock"+counter+"";
-    document.getElementById(idName).setAttribute("style", "text-decoration: line-through;");
+function finish(num1) {
+    var idName = "rock"+num1;
+    var sap = document.getElementById(idName);
+    sap.setAttribute("class", "strikethrough");
+    //document.getElementById("rock).setAttribute("class", "strikethrough");
 
 
    
